@@ -1,0 +1,151 @@
+/* ---- reset ---- */ body{ margin:0; font:normal 75%; font-family: Montserrat; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #ffff00; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+#formContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 350px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 0px gray;
+}
+#formContainer h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#formContainer form {
+    cursor: default;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 315px;
+}
+
+#formContainer form input {
+    cursor: default;
+    outline: none;
+    box-sizing: border-box;
+
+    width: 90px;
+    height: 35px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 0px 6px;
+
+    background-color: yellow;
+    border: transparent solid 2px;
+    border-radius: 5px;
+}
+#formContainer form input:hover {
+    background-color: #EEEE00;
+}
+
+#formContainer form .plus {
+    width: 74px;
+}
+#formContainer form input:focus {
+    border: black solid 1.5px;
+}
+
+#formContainer form .label {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+
+    width: 30px;
+    height: 10px;
+}
+#formContainer form .label i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#formContainer form #buttonEq {
+    cursor: pointer;
+    float: left;
+
+    width: 150px;
+    height: 35px;
+
+    margin-top: 20px;
+
+    text-align: center;
+    line-height: 32px;
+
+    font-size: 17px;
+    color: black;
+
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+#buttonClear {
+    cursor: pointer;
+    float: right;
+
+    width: 150px;
+    height: 35px;
+
+    margin-top: 20px;
+
+    text-align: center;
+    line-height: 32px;
+
+    font-size: 17px;
+    color: black;
+
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+#formContainer form #buttonEq:hover, #buttonClear:hover {
+    background-color: #EEEE00;
+}
+
+#formContainer #result {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+#formContainer #result label {
+    border-bottom: black solid 2px;
+    padding-bottom: 3px;
+
+    width: auto;
+    height: 30px;
+}
+
+#mark {
+    position: absolute;
+    top: 99%;
+    left: .5%;
+    transform: translate(0%, -100%);
+
+    font-size: 17px;
+}
